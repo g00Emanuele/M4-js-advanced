@@ -56,15 +56,19 @@ function findSum(arr){
 function control1And3 (arr){
     for (const i of arr) {
         if(arr[i] === 1){
+            console.log('false')
             return false
         } else if(arr[i] === 3){
+            console.log('false')
+
             return false
         } else {
+            console.log('true')
+
             return true
         }
     }
 }
 
-const array = [0, 1, 4]
-let a = control1And3(array)
-console.log(a)
+const array = [0, 1, ]
+control1And3(array)
