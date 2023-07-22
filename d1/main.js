@@ -53,22 +53,7 @@ function findSum(arr){
 
 // Esercizio 6
 
-function control1And3 (arr){
-    for (const i of arr) {
-        if(arr[i] === 1){
-            console.log('false')
-            return false
-        } else if(arr[i] === 3){
-            console.log('false')
-
-            return false
-        } else {
-            console.log('true')
-
-            return true
-        }
-    }
+function control1And3(arr){
+    return !arr.includes(1) && !arr.includes(3)
 }
 
-const array = [0, 1, ]
-control1And3(array)
