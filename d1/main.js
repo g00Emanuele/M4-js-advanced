@@ -57,3 +57,42 @@ function control1And3(arr){
     return !arr.includes(1) && !arr.includes(3)
 }
 
+// Esercizio 7
+
+function findAngle(gradi){
+    if(gradi < 90){
+        console.log('angolo acuto')
+    } else if(gradi === 90){
+        console.log('angolo retto')
+    } else if(gradi > 90  && gradi < 180){
+        console.log('angolo ottuso')
+    } else if(gradi === 180){
+        console.log('angolo piatto')
+    } else {
+        console.log('inserisci un numero tra 0 e 180')
+    }
+}
+
+// Esercizio 8
+
+function acronym(stringa){
+    let acr = []
+    const arr = stringa.split('')
+    console.log(arr)
+    acr.push(arr[0].toUpperCase())
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i - 1] === ' '){
+            acr.push(arr[i].toUpperCase())
+        }
+    }
+    console.log(acr)
+    let newAcr = ''
+    for(let i = 0; i < acr.length; i++){
+        newAcr += acr[i]
+    }
+    console.log(newAcr)
+    return newAcr
+}
+
+let a = acronym('fabbrica italiana automobili torino')
+console.log(a)
