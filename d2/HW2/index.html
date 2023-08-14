@@ -18,6 +18,22 @@
 </head>
 
 <body>
+  <div id="myModal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container-fluid">
     <div class="row">
       <!--SIDEBAR VERTICAL-->
@@ -42,6 +58,7 @@
                     <a class="nav-item nav-link" href="#"><i class="fas fa-book-open fa-lg"></i>&nbsp; Your
                       Library</a>
                   </li>
+                  
                   <li>
                     <div class="input-group mt-3">
                       <input type="text" class="form-control mb-2" id="searchField" placeholder="Search"
@@ -62,7 +79,9 @@
           <div class="nav-btn">
             <button class="btn signup-btn" type="button">Sign Up</button>
             <button class="btn login-btn" type="button">Login</button>
-            <a href="#">Cookie Policy</a> |
+            <button id="crea-lista" class="btn signup-btn" data-bs-toggle="modal" 
+              data-bs-target="#myModal">Crea lista</button>
+            <a href="#">Cookie Policy</a> 
             <a href="#"> Privacy</a>
           </div>
         </nav>
@@ -99,7 +118,7 @@
         </div>
         <div class="row">
           <div class="col-10">
-            <div id="metallica" class="d-none">
+            <div id="metallica">
               <h2>Metallica</h2>
               <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="metallicaSection">
               </div>
@@ -108,7 +127,7 @@
         </div>
         <div class="row">
           <div class="col-10">
-            <div id="queen" class="d-none">
+            <div id="queen">
               <h2>Queen</h2>
               <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="queenSection">
               </div>
